@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <title>Combined Plots - IR-Integrator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+{% endblock %}
+
+{% block body %}
+  <div class="container-plot">
+    <h1>Plots for Selected Files</h1>
+    <div class="plot-container">
+      {% if plot_paths %}
+        {% for plot in plot_paths %}
+          <div class="plot-item">
+            <img src="{{ url_for('static', filename='color_plot_combined.png') }}" alt="Plot" class="img-fluid">
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>No plots available.</p>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
