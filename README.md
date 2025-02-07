@@ -21,38 +21,18 @@ This repository contains a Flask-based web application designed for analyzing an
 ## Setup Instructions
 
 ### 1. Clone the Repository
-
-Clone the repository to your local machine:
-
-```bash
 git clone https://github.com/ElioMargiotta/Colormap.git
 
 ### 2. Create and Activate a Virtual Environment
 
-Using a virtual environment helps manage project dependencies without affecting your global Python installation.
-
 #### a. Navigate to the Project Directory
-
-```bash
 cd Colormap
 
 #### b. Create the Virtual Environment
-
-Create a virtual environment named `venv`:
-
-```bash
 python -m venv venv
 
 #### c. Activate the Virtual Environment
-
-**On Windows:**
-
-```bash
 venv\Scripts\activate
 
 ### 3. Install Dependencies
-
-Install all required packages using pip:
-
-```bash
 pip install -r requirements.txt
